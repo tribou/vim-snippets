@@ -1,33 +1,51 @@
 snippet ir
-	import React from 'react';
+	import React from 'react'
 snippet ird
-	import ReactDOM from 'react-dom';
+	import ReactDOM from 'react-dom'
 snippet cdm
-	componentDidMount() {
+	componentDidMount () {
+
 		${1}
+
 	}
+
 snippet cdup
-	componentDidUpdate(prevProps, prevState) {
+	componentDidUpdate (prevProps, prevState) {
+
 		${1}
+
 	}
+
 snippet cwm
-	componentWillMount() {
+	componentWillMount () {
+
 		${1}
+
 	}
+
 snippet cwr
-	componentWillReceiveProps(nextProps) {
+	componentWillReceiveProps (nextProps) {
+
 		${1}
+
 	}
+
 snippet cwun
-	componentWillUnmount() {
+	componentWillUnmount () {
+
 		${1}
+
 	}
+
 snippet cwu
-	componentWillUpdate(nextProps, nextState) {
+	componentWillUpdate (nextProps, nextState) {
+
 		${1}
+
 	}
+
 snippet fup
-	forceUpdate(${1:callback});
+	forceUpdate(${1:callback})
 snippet dp
 	static defaultProps = {
 		${1}: ${2},
@@ -42,37 +60,55 @@ snippet pt
 	}
 snippet rcc
 	class ${1:ClassName} extends React.Component {
-		render() {
+
+		render () {
+
 			return (
 				${0:<div />}
-			);
+			)
+
 		}
+
 	}
+
 snippet rdr
 	ReactDOM.render(${1}, ${2})
 snippet ercc
-	export default class ${1:ClassName} extends React.Component {
-		render() {
+	class ${2:ClassName} extends React.Component {
+
+		render () {
+
 			return (
 				${0:<div />}
-			);
+			)
+
 		}
+
 	}
+
+	export default ${1:ClassName}
+
 snippet ctor
 	constructor() {
-		super();
+
+		super()
 		${1}
+
 	}
+
 snippet ren
-	render() {
+	render () {
+
 		return (
 			${1:<div />}
-		);
+		)
+
 	}
+
 snippet sst
 	this.setState({
 		${1}: ${2}
-	});
+	})
 snippet scu
 	shouldComponentUpdate(nextProps, nextState) {
 		${1}

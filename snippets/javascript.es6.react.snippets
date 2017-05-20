@@ -9,21 +9,26 @@ snippet ri2
 # React class
 snippet rcla
 	class ${1:MyComponent} extends Component {
-		render() {
+
+		render () {
+
 			return (
 				${0:<div></div>}
 			)
+
 		}
+
 	}
 
 # React constructor
 snippet rcon
 	constructor(props) {
-		super(props)
 
+		super(props)
 		this.state = {
 			${1}: ${0},
 		}
+
 	}
 
 # Proptypes for React Class
@@ -41,9 +46,11 @@ snippet rcdp
 # Presentational component
 snippet rcom
 	(props) => {
+
 		return (
 			${0:<div></div>}
 		)
+
 	}
 
 # Proptypes for Presentational component
@@ -60,8 +67,10 @@ snippet rdp
 
 # Lifecycle Methods
 snippet rcdm
-	componentDidMount() {
+	componentDidMount () {
+
 		${0:${VISUAL}}
+
 	}
 
 # State
